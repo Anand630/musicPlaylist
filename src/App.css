@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-page-container {
+  height: 100vh;
+  background-color: #152850;
+  margin: 0;
+}
+
+.page-banner-container {
+  height: 300px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/music-playlist/music-playlist-Edsheeran-bg.png');
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 45px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 873px) {
+  .page-banner-container {
+    height: 250px;
+  }
+}
+
+@media (max-width: 575px) {
+  .page-banner-container {
+    height: 220px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+  }
+}
+
+.singer-name {
+  font-family: Roboto;
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+@media (max-width: 575px) {
+  .singer-name {
+    font-size: 25px;
+  }
+}
+
+.singer-text {
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+@media (max-width: 575px) {
+  .singer-text {
+    font-size: 16px;
+  }
+}
+
+.bottom-container {
+  margin: 6px 6%;
+}
+
+.songs-playlist-heading-and-searchbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.songs-playlist-heading {
+  font-family: Roboto;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+@media (max-width: 530px) {
+  .songs-playlist-heading {
+    font-size: 22px;
+  }
+}
+
+.input-and-icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+.search-bar {
+  background-color: transparent;
+  border: none;
+  padding: 5px 4px 5px 12px;
+  color: #ffffff;
+  outline: none;
+  font-size: 15px;
+  font-family: Roboto;
+}
+
+@media (max-width: 530px) {
+  .search-bar {
+    background-color: transparent;
+    border: none;
+    padding: 3px 3px 3px 8px;
+    color: #ffffff;
+    outline: none;
+    font-size: 13px;
+    font-family: Roboto;
+  }
+}
+
+@media (max-width: 460px) {
+  .search-bar {
+    background-color: transparent;
+    border: none;
+    padding: 3px 3px 3px 8px;
+    color: #ffffff;
+    outline: none;
+    font-size: 13px;
+    font-family: Roboto;
+    width: 120px;
+  }
+}
+
+.search-button {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.all-songs-container {
+  list-style: none;
+  padding-left: 0;
+  overflow-y: auto;
+  height: 230px;
+}
+
+@media (max-width: 874px) {
+  .all-songs-container {
+    height: 278px;
+  }
+}
+
+@media (max-width: 575px) {
+  .all-songs-container {
+    height: 315px;
+  }
+}
+
+@media (max-width: 530px) {
+  .all-songs-container {
+    height: 335px;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.empty-songs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.no-songs-found {
+  font-family: Roboto;
+  color: #ffffff;
+  text-align: center;
+  margin-top: auto;
+  font-weight: 500;
+  font-size: 26px;
+  margin-top: 60px;
+}
+
+@media (max-width: 575px) {
+  .no-songs-found {
+    margin-top: 100px;
+  }
+}

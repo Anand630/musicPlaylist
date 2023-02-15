@@ -1,0 +1,139 @@
+.list-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-right: 8px;
+}
+
+.song-card-image {
+  width: 200px;
+  border-radius: 10px;
+}
+
+@media (max-width: 657px) {
+  .song-card-image {
+    width: 150px;
+  }
+}
+@media (max-width: 445px) {
+  .song-card-image {
+    width: 130px;
+  }
+}
+
+.song-name-genre-duration-container {
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+  justify-content: space-between;
+  width: 73%;
+}
+
+@media (max-width: 1023px) {
+  .song-name-genre-duration-container {
+    width: 68%;
+  }
+}
+
+@media (max-width: 912px) {
+  .song-name-genre-duration-container {
+    width: 65%;
+  }
+}
+
+@media (max-width: 803px) {
+  .song-name-genre-duration-container {
+    width: 62%;
+  }
+}
+
+@media (max-width: 725px) {
+  .song-name-genre-duration-container {
+    width: 56%;
+  }
+}
+
+@media (max-width: 657px) {
+  .song-name-genre-duration-container {
+    width: 62%;
+  }
+}
+
+@media (max-width: 587px) {
+  .song-name-genre-duration-container {
+    width: 58%;
+  }
+}
+
+@media (max-width: 530px) {
+  .song-name-genre-duration-container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 445px) {
+  .song-name-genre-duration-container {
+    width: 40%;
+  }
+}
+
+.song-name-genre-container {
+}
+
+.song-name {
+  font-family: Roboto;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+@media (max-width: 657px) {
+  .song-name {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 512px) {
+  .song-name {
+    font-size: 14px;
+  }
+}
+
+.genre {
+  font-family: Roboto;
+  color: #3b82f6;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 657px) {
+  .genre {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 512px) {
+  .genre {
+    font-size: 13px;
+  }
+}
+
+.duration {
+  font-family: Roboto;
+  color: #ffffff;
+}
+
+@media (max-width: 512px) {
+  .duration {
+    font-size: 12px;
+  }
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
